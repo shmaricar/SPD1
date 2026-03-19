@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Crust | Artisan Bakery</title>
+    <!-- Modern Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Golden Crust: Handcrafted artisan breads, rustic pastries, and local goods baked fresh daily.">
+</head>
+<body>
+    <div class="overlay"></div>
+    
+    <header class="navbar" id="main-nav">
+        <div class="logo">Golden Crust</div>
+        <nav aria-label="Primary Navigation">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                
+                <!-- Dropdown Menu Item -->
+                <li class="dropdown">
+                    <a href="#menu" class="dropbtn" id="menu-dropdown" aria-haspopup="true" aria-expanded="false">Our Menu <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+                    <div class="dropdown-content" aria-label="Bakery Menu Categories">
+                        <a href="#sourdough">Artisan Sourdough</a>
+                        <a href="#pastries">Viennoiserie & Pastries</a>
+                        <a href="#cakes">Cakes & Tarts</a>
+                        <a href="#savory">Savory Bakes</a>
+                    </div>
+                </li>
+                
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile menu toggle -->
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <!-- Home/Hero Section -->
+        <section id="home" class="hero fullscreen-section">
+            <div class="hero-content">
+                <span class="badge">Est. 2026</span>
+                <h1>Bread, the way it was<br>meant to be.</h1>
+                <p>Welcome to Golden Crust. We believe in time-honored traditions, using wild yeast, organic flour, and patience to craft the finest breads and pastries in the city.</p>
+                <a href="#menu" class="primary-btn">View Assortment</a>
+            </div>
+        </section>
+
+        <!-- Dynamic Menu Preview Section -->
+        <section id="menu" class="content-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Our Bakery Menu</h2>
+                    <p class="subtitle">Select a category from the dropdown above, or explore our top picks below.</p>
+                </div>
+                
+                <div class="menu-grid">
+                    <div class="menu-item-card" id="sourdough">
+                        <div class="card-bg" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('hero_bg.png')"></div>
+                        <div class="card-content">
+                            <h3>Artisan Sourdough</h3>
+                            <p>Naturally leavened over 48 hours for a distinct, rich flavor and perfectly blistering crust.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-card" id="pastries">
+                        <div class="card-bg" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('hero_bg.png')"></div>
+                        <div class="card-content">
+                            <h3>Classic Viennoiserie</h3>
+                            <p>Flaky, butter-rich layers of joy. Croissants, pain au chocolat, and seasonal danishes.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-card" id="cakes">
+                        <div class="card-bg" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('hero_bg.png')"></div>
+                        <div class="card-content">
+                            <h3>Signature Cakes</h3>
+                            <p>Hand-crafted celebration cakes and exquisite tarts utilizing the freshest local ingredients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Story Section -->
+        <section id="story" class="content-section dark-alt">
+             <div class="section-container">
+                 <div class="story-grid">
+                     <div class="story-text">
+                         <h2>A Story of Flour & Time</h2>
+                         <p>Our journey began with a single jar of sourdough starter and a passion for redefining the local bakery experience. Every loaf we bake tells a story of patience and dedication to the craft.</p>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
